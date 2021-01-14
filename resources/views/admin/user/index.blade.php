@@ -5,7 +5,18 @@
 @endsection
 
 @section('content')
-
+    <div class="float-right">
+        <form action="{{ route('admin.user.index') }}" method="get">
+            <div class="input-group">
+                <input type="text" name="keyword" class="form-control"/>
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>    
     <div class="table-responsive">
         <table class="table table-hover table-bordered ">
             <thead class="thead-light">
