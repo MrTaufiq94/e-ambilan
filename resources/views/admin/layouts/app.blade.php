@@ -42,7 +42,16 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                @yield('content')
+                <div class="container-fluid">
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            @yield('header')
+                        </div>
+                        <div class="card-body">
+                            @yield('content')
+                        </div>
+                    </div>
+                </div>
                 <!-- /.container-fluid -->
 
             </div>

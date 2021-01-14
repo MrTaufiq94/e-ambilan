@@ -10,7 +10,8 @@ class UserController extends Controller
 {
     public function index(){
         //panggil semua user
-        $users = User::all();
+        //$users = User::all();
+        $users = User::paginate(5);
         return view('admin/user/index',compact('users'));
         //paparkan users dalam user management index
     }
